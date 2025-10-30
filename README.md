@@ -25,6 +25,27 @@ The goal of this project is not just to display data, but to understand the mark
 
 🧰 Supports Integration with Dune API — Combine on-chain and exchange data in one place
 
+## 📸 Screenshots
+### 📈 Trading Assistant
+<p align="center">
+  <img src="assets/screenshots/trading_assistant.png" alt="Trading Assistant" width="700">
+</p>
+
+### 📈 On-Chain Analysis
+<p align="center">
+  <img src="assets/screenshots/on_chain.png" alt="On-Chain Analysis" width="700">
+</p>
+
+### 📈 Pair Analysis
+<p align="center">
+  <img src="assets/screenshots/pair.png" alt="Pair Analysis" width="700">
+</p>
+
+### 📈 Options Analysis
+<p align="center">
+  <img src="assets/screenshots/options.png" alt="Options Analysis" width="700">
+</p>
+
 ## 🗂️ Project Structure
 ```bash
 crypto_dash/
