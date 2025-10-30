@@ -1,0 +1,291 @@
+/* ------------------------------
+   🔹 General Dashboard Styling
+------------------------------ */
+body {
+    background-color: #1A1D21;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.home-page {
+    padding: 60px 20px;
+    background-color: #f9fbfd;
+}
+
+#content {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #00d4ff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* ------------------------------
+   🔹 Grid and Card Layout
+------------------------------ */
+.grid-container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.table-grid, .graph-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.table-item, .graph-item {
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* ------------------------------
+   🔹 Dropdown Menu Styling
+------------------------------ */
+.Select-menu-outer {
+    background-color: #1e1e2f !important;
+    border: 1px solid #333 !important;
+}
+
+.Select-option {
+    background-color: #1e1e2f !important;
+    color: #ffffff !important;
+}
+
+.Select-option.is-focused,
+.Select-option.is-selected {
+    background-color: #3a3a5c !important;
+    color: #ffffff !important;
+}
+
+.Select-control {
+    background-color: #1e1e2f !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+.Select-placeholder,
+.Select-input > input {
+    color: #888888 !important;
+}
+
+.Select-value-label {
+    color: #ffffff !important;
+}
+
+.Select-arrow {
+    border-color: #1e1e2f transparent transparent !important;
+}
+
+.Select-menu {
+    background-color: #1e1e2f !important;
+}
+
+/* ------------------------------
+   🔹 Custom Input Fields
+------------------------------ */
+.custom-input {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    background-color: #1e1e2f;
+    color: white;
+    padding: 8px 10px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.custom-input:hover {
+    border-color: #ffffff;
+}
+
+.custom-input:focus {
+    border-color: #4da6ff;
+    box-shadow: 0 0 5px rgba(77, 166, 255, 0.5);
+}
+
+.custom-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ------------------------------
+   🔹 Sidebar Styling (Hover Expand)
+------------------------------ */
+
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: #1e1e2f;
+    color: white;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    border-right: 1px solid #2c2c3a;
+    z-index: 1000;
+}
+
+/* Expand on hover */
+.sidebar:hover {
+    width: 230px;
+}
+
+/* Sidebar content
+.sidebar-content {
+    padding: 20px 10px;
+} */
+
+/* Sidebar text (hide by default) */
+.sidebar .sidebar-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 18px;
+}
+
+/* Show text when expanded */
+.sidebar:hover .sidebar-text {
+    opacity: 1;
+}
+
+/* Nav links */
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.sidebar-link:hover {
+    background-color: #334155;
+    color: #38bdf8 !important;
+}
+
+.sidebar-logo {
+    opacity: 1;                  /* وقتی بازه کامل نمایش بده */
+    white-space: nowrap;          /* جلوگیری از شکستن متن */
+    overflow: hidden;
+}
+
+.sidebar.collapsed .sidebar-logo {
+    opacity: 0;                  /* وقتی جمعه، متن مخفی بشه */
+}
+
+/* Logo text visibility 
+.sidebar-logo {
+    font-size: 24px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+} */
+
+.sidebar:hover .sidebar-logo {
+    opacity: 1;
+}
+
+/* ------------------------------
+   🔹 Main Content Alignment
+------------------------------ */
+.main-content {
+    margin-left: 70px;
+    transition: margin-left 0.3s ease;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #0f172a;
+}
+
+.sidebar:hover + .main-content {
+    margin-left: 230px;
+}
+
+/*
+#sidebar-title {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}  */
+
+/* ---------- 🔹 Accordion custom dark theme for On-chain page sidebar ---------- */
+
+.accordion-button {
+    background-color: #1e1e2f !important;
+    color: #e2e8f0 !important;
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #334155 !important; /* وقتی بازه */
+    color: #38bdf8 !important;
+}
+
+.accordion-item {
+    background-color: #1e1e2f !important;
+    border: 1px solid #2c2c3a !important;
+}
+
+.accordion-body {
+    background-color: #1e1e2f !important;
+    color: #e2e8f0 !important;
+}
+
+/* ---------- 🔹 NavLink style (inside accordion) ---------- */
+.nav-link {
+    background-color: transparent !important;
+    color: #e2e8f0 !important;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+    background-color: #334155 !important;
+    color: #38bdf8 !important;
+}
+
+.nav-link.active {
+    background-color: #38bdf8 !important;
+    color: #0f172a !important;
+}

@@ -1,0 +1,36 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Ignore logs or output data
+results/
+reports/
+data/
+*.log
+*.csv
+*.json
+data/
+
+# Ignore environment file
+.env
+# Virtualenv
+.venv/
+venv/
+ENV/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+app.log
