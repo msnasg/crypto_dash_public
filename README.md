@@ -1,4 +1,4 @@
-# Binance Trading Dashbiard
+# Binance Trading Dashboard
 
 Binance Trading Dashboard is a modular and professional-grade analytical platform built in Python using Dash, designed to give traders deep market insights, automated signal detection, and intelligent trade management — all in one clean and extensible interface.
 
